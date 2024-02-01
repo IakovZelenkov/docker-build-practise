@@ -4,6 +4,6 @@ WORKDIR /home/ilovedocker/app
 
 COPY hello.sh .
 
-RUN hello.sh
+RUN chmod +x hello.sh
 
-CMD sh hello.sh
+ENTRYPOINT ["sh", "hello.sh"]
